@@ -1,0 +1,18 @@
+Camels: forcing-tmax_cr2met_day, precip_cr2met_day, pet_hargreaves_day and q_m3s_day
+
+1. 2016_20220
+runof and forcing data are 2016-19 as 2015-18
+
+2. 2011_2014
+data of 2011_2014 with missing data
+
+runoff: 4/2/2014	4/3/2014
+
+
+
+
+3. 2015_2019
+data of 2015_2019 with missing data
+
+3/23/2015 to 12/12/2015 (value taken from 2014)
+
