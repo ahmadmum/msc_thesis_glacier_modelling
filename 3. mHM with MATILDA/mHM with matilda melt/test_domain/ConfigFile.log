@@ -1,0 +1,173 @@
+--------------------------------------------------------------------------------
+                                                   mHM-UFZ v-5.12.1-dev0+1924860
+                                                    L. Samaniego & R. Kumar, UFZ
+--------------------------------------------------------------------------------
+
+         M A I N  mHM  C O N F I G U R A T I O N  I N F O R M A T I O N         
+
+Number of domain                       1
+Total No. of gauges                    1
+Time Step [h]                          1
+            Domain                     1
+No. of cells L0                   123893
+            Domain                     1
+No. of cells L1                       15
+Total No. of nodes                    15
+Total No. of reaches                  14
+No. of cells L11                      15
+Total No. of gauges                    1
+Domain  1   Hydrology Resolution [o]           2.50000000E-01
+Domain  1   Routing Resolution [o]             2.50000000E-01
+Flag READ  restart                     F
+Flag WRITE restart                     F
+
+-------------------------------------------------------------
+                      Model Run Periods for Domain         1
+-------------------------------------------------------------
+                                       From                To
+                            Day Month  Year   Day Month  Year
+Warming Period (1)            1     1  2016    31    12  2015
+Evaluation Period (2)         1     1  2016    31    12  2018
+Simulation Period (1)+(2)     1     1  2016    31    12  2018
+
+--------------------------------------------------
+       Land Cover Observations for Domai         1
+--------------------------------------------------
+ Start Yea  End Year    Land cover scene     Land Cover File
+
+      1900      2100                   1              lc.asc
+
+-------------------------------------------------------
+  Initial Transfer Function Parameter Ranges (gammas)  
+-------------------------------------------------------
+         i            min            max        current                               name
+         1          0.150          0.400          0.398           canopyInterceptionFactor
+         2         -2.000          2.000          0.338           snowTreshholdTemperature
+         3          0.000          4.000          2.166             degreeDayFactor_forest
+         4          0.000          1.000          0.580         degreeDayFactor_impervious
+         5          0.000          2.000          0.579           degreeDayFactor_pervious
+         6          0.100          0.900          0.878    increaseDegreeDayFactorByPrecip
+         7          0.000          8.000          0.077          maxDegreeDayFactor_forest
+         8          0.000          8.000          3.171      maxDegreeDayFactor_impervious
+         9          0.000          8.000          0.297        maxDegreeDayFactor_pervious
+        10          5.000         10.000          5.773            orgMatterContent_forest
+        11          0.000          1.000          0.569        orgMatterContent_impervious
+        12          1.000          5.000          4.922          orgMatterContent_pervious
+        13          0.750          0.800          0.800             PTF_lower66_5_constant
+        14          0.001          0.001          0.001                 PTF_lower66_5_clay
+        15         -0.270         -0.250         -0.252                   PTF_lower66_5_Db
+        16          0.800          0.900          0.846            PTF_higher66_5_constant
+        17         -0.001         -0.001         -0.001                PTF_higher66_5_clay
+        18         -0.350         -0.300         -0.329                  PTF_higher66_5_Db
+        19         -1.200         -0.285         -0.313                    PTF_Ks_constant
+        20          0.006          0.026          0.011                        PTF_Ks_sand
+        21          0.003          0.013          0.003                        PTF_Ks_clay
+        22         60.960         60.960         60.960                  PTF_Ks_curveSlope
+        23          0.900          0.999          0.997     rootFractionCoefficient_forest
+        24          0.900          0.950          0.927 rootFractionCoefficient_impervious
+        25          0.001          0.090          0.004   rootFractionCoefficient_pervious
+        26          1.000          4.000          1.043            infiltrationShapeFactor
+        27          0.000          5.000          4.985          imperviousStorageCapacity
+        28          0.700          1.300          1.264             minCorrectionFactorPET
+        29          0.000          0.200          0.076             maxCorrectionFactorPET
+        30        160.000        200.000        160.116                  aspectTresholdPET
+        31         75.000        200.000        133.162     interflowStorageCapacityFactor
+        32          0.000         10.000          9.734           interflowRecession_slope
+        33          1.000          3.000          1.012      fastInterflowRecession_forest
+        34          1.000         30.000          3.047          slowInterflowRecession_Ks
+        35          0.050          0.300          0.272              exponentSlowInterflow
+        36          0.000         50.000         28.690                rechargeCoefficient
+        37         -5.000          5.000         -3.730             rechargeFactor_karstic
+        38          1.000          1.000          1.000      gain_loss_GWreservoir_karstic
+        39          0.100        100.000         30.000                       slope_factor
+        40          1.000       1000.000         82.119                      GeoParam(1,:)
+        41          1.000       1000.000         43.519                      GeoParam(2,:)
+        42          1.000       1000.000          8.835                      GeoParam(3,:)
+        43          1.000       1000.000        478.838                      GeoParam(4,:)
+        44          1.000       1000.000        100.000                      GeoParam(5,:)
+        45          1.000       1000.000        100.000                      GeoParam(6,:)
+        46          1.000       1000.000         95.134                      GeoParam(7,:)
+        47          1.000       1000.000        100.000                      GeoParam(8,:)
+        48          1.000       1000.000        565.295                      GeoParam(9,:)
+        49          1.000       1000.000          5.991                     GeoParam(10,:)
+        50          1.000       1000.000         73.574                     GeoParam(11,:)
+        51          1.000       1000.000        833.337                     GeoParam(12,:)
+        52          1.000       1000.000         12.979                     GeoParam(13,:)
+        53          1.000       1000.000        982.145                     GeoParam(14,:)
+        54          1.000       1000.000        954.068                     GeoParam(15,:)
+        55          1.000       1000.000        134.352                     GeoParam(16,:)
+
+--------------------------------------------------
+                Domain Runoff Data                
+--------------------------------------------------
+ Gauge No.  Domain I     Qmax[m3/s]     Qmin[m3/s]
+         1         1        526.000         26.300
+
+--------------------------------------------------------------------------------
+                          Domain-wise Configuratio
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+                                 Directory list
+--------------------------------------------------------------------------------
+Directory to morphological input             test_domain/input/morph/                                                                                                                                                                                                                                        
+Directory to land cover input                test_domain/input/morph/                                                                                                                                                                                                                                        
+Directory to gauging station input           test_domain/input/gauge/                                                                                                                                                                                                                                        
+Directory to precipitation input             test_domain/input/meteo_era5/                                                                                                                                                                                                                                   
+Directory to temperature input               test_domain/input/meteo_era5/                                                                                                                                                                                                                                   
+Directory to reference ET input              test_domain/input/meteo_era5/                                                                                                                                                                                                                                   
+Directory to write output by default         test_domain/output_b1/                                                                                                                                                                                                                                          
+File to write mHM output when restarted                                                                                                                                                                                                                                                                      
+
+------------------------------
+River Network  (Routing level)
+------------------------------
+                                           Label 0 = intermediate draining cell 
+                                           Label 1 = headwater cell             
+                                           Label 2 = sink cell                  
+
+--------------------
+   Overall     Domai
+      Cell   Routing
+        Id   Node Id
+--------------------
+         1
+         2
+         3
+         4
+         5
+         6
+         7
+         8
+         9
+        10
+        11
+        12
+        13
+        14
+        15
+
+------------------------------
+  Modeling   Routing Effective
+      Cell   Cell Id      Area
+        Id       [-]     [km2]
+------------------------------
+         1         1   279.697
+         2         2    40.131
+         3         3   535.218
+         4         4   452.183
+         5         5   368.184
+         6         6   643.515
+         7         7   338.350
+         8         8   345.311
+         9         9   641.642
+        10        10   304.073
+        11        11    52.811
+        12        12   384.147
+        13        13   432.191
+        14        14    15.554
+        15        15    28.341
+------------------------------
+     Total[km2]       4861.348
+
+
